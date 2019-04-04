@@ -1,0 +1,22 @@
+figcaption {
+  max-width: 40vw;
+  word-wrap: break-word;
+}
+
+table{
+  table-layout: fixed;
+  width: 90vw;
+}
+
+#head {
+  background-color: rgba(101,96,159,0.8);
+  color: #eeeeee;
+  font-size: 3vw;
+}
+
+/* W3Schools Tutorial on screen sizes */
+@media only screen and (min-width: 601px) {
+  #head {
+    font-size: 20px;
+  }
+}
