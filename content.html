@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 1 Part 2</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="content.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Pokémon Sword and Shield</h1>
+      <a href="index.html"><img id="navImg" src="https://www.goodfreephotos.com/albums/vector-images/pokemon-pokeball-vector-graphic.png" alt="Pokéball"></a>
+      <nav>
+        <a href="index.html" id="active">Home</a>
+        <a href="content.html">Fan Art</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p id="cite">Map of Galar Region. 2019. Pokemon.com, Pokémon, 27 Feb. 2019, swordshield.pokemon.com/assets/img/common/map_2x.jpg. Accessed 3 Apr. 2019.</p>
+    </header>
+
+    <!-- Table contains content of the page -->
+    <table>
+      <tr id='head'>
+        <th>Fan Art</th>
+        <th>Originals</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://i.imgur.com/idqqpw7l.jpg" alt="Grookey evolution line fan art.">
+              <figcaption id="three">Idqqpw7. Grookey Fake Evolutions. 27 Feb. 2019. Imgur.com, imgur.com/idqqpw7. Accessed 3 Apr. 2019. </figcaption>
+            </figure>
+            <button onclick="three()">Click to show citation</button>
+          </td>
+          <td rowspan="3">
+            <figure>
+              <img src="https://swordshield.pokemon.com/assets/img/common/pokemon-1_2x.png" alt="Grookey, Gen 8 Grass Starter.">
+              <figcaption id='four'> Grass Type Starter Grookey. 2019. Pokemon.com, Pokémon, 27 Feb. 2019, swordshield.pokemon.com/assets/img/common/pokemon-1_2x.png. Accessed 3 Apr. 2019. </figcaption>
+            </figure>
+            <button onclick="four()">Click to show citation</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2f481410-202b-4fc0-b639-0e5cf6202737/dd1a8uc-086d44c1-ba36-42d6-ae80-5f2246fd89d2.png/v1/fill/w_1158,h_690,q_70,strp/grookey_fake_evolutions_by_mat4265_dd1a8uc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzEwMCIsInBhdGgiOiJcL2ZcLzJmNDgxNDEwLTIwMmItNGZjMC1iNjM5LTBlNWNmNjIwMjczN1wvZGQxYTh1Yy0wODZkNDRjMS1iYTM2LTQyZDYtYWU4MC01ZjIyNDZmZDg5ZDIucG5nIiwid2lkdGgiOiI8PTUyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.56f21xDMFmb7x5BoSCoK5SRzMnFMEMaZG9ZlmUPTeIQ" alt="Grookey evolution line fan art.">
+              <figcaption id='five'>Mat4265. "Grookey Fake Evolutions." 2019. Deviantart.com, DeviantArt, 4 Mar. 2019, www.deviantart.com/mat4265/art/Grookey-Fake-Evolutions-788217924. Accessed 3 Apr. 2019. </figcaption>
+            </figure>
+            <button onclick="five()">Click to show citation</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/746ae439-66f6-4843-8468-3a4655189ad1/dd0zeki-598316c4-43b8-414e-8039-98047503c466.png/v1/fill/w_900,h_675,q_80,strp/grookey_evolution_line_by_chunphan_dd0zeki-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc1IiwicGF0aCI6IlwvZlwvNzQ2YWU0MzktNjZmNi00ODQzLTg0NjgtM2E0NjU1MTg5YWQxXC9kZDB6ZWtpLTU5ODMxNmM0LTQzYjgtNDE0ZS04MDM5LTk4MDQ3NTAzYzQ2Ni5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.kr8RU7HoBwZktFxV4yiOElu91VTQc8oa3vQqYx3lMi0" alt="Scorbunny's evolution line fan art">
+              <figcaption id='six'>ChunPhan. "Grookey Evolution Line." 2019. Deviantart.com, DeviantArt, 1 Mar. 2019, www.deviantart.com/chunphan/art/Grookey-evolution-line-787712130. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="six()">Click to show citation</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2f481410-202b-4fc0-b639-0e5cf6202737/dd1aafw-5efb42e7-f5ec-4d11-9516-90a3266602a5.png/v1/fill/w_1158,h_690,q_70,strp/scorbunny_fake_evolutions_by_mat4265_dd1aafw-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzEwMCIsInBhdGgiOiJcL2ZcLzJmNDgxNDEwLTIwMmItNGZjMC1iNjM5LTBlNWNmNjIwMjczN1wvZGQxYWFmdy01ZWZiNDJlNy1mNWVjLTRkMTEtOTUxNi05MGEzMjY2NjAyYTUucG5nIiwid2lkdGgiOiI8PTUyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-1P7RNuLEZNwpFf7ADjFNzxz0m6tcYo_fwVPCy1U4og" alt="Scorbunny's evolution line fan art">
+              <figcaption id='seven'>Mat4265. "Scorbunny Fake Evolutions." 2019. Deviantart.com, DeviantArt, 4 Mar. 2019, www.deviantart.com/mat4265/art/Scorbunny-Fake-Evolutions-788219996. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="seven()">Click to show citation</button>
+          </td>
+          <td rowspan="2">
+            <figure>
+              <img src="https://swordshield.pokemon.com/assets/img/common/pokemon-2_2x.png" alt="Scorbunny, Gen 8 Fire Starter.">
+              <figcaption id='eight'> Fire Type Starter Scorbunny. 2019. Pokemon.com, Pokémon, 27 Feb. 2019, swordshield.pokemon.com/assets/img/common/pokemon-2_2x.png. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="eight()">Click to show citation</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/746ae439-66f6-4843-8468-3a4655189ad1/dd0ze6p-34aaffa9-a62a-47d7-a30b-862b05c22f69.png/v1/fill/w_900,h_843,q_80,strp/scorbunnny_evolution_line_by_chunphan_dd0ze6p-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODQzIiwicGF0aCI6IlwvZlwvNzQ2YWU0MzktNjZmNi00ODQzLTg0NjgtM2E0NjU1MTg5YWQxXC9kZDB6ZTZwLTM0YWFmZmE5LWE2MmEtNDdkNy1hMzBiLTg2MmIwNWMyMmY2OS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.nHy0BtJbvqUCcKqowrzaRHks8b1Dm3E36yq7AOXfeJM" alt="Scorbunny's evolution line fan art">
+              <figcaption id='nine'>ChunPhan. "Sobble Evolution Line." 2019. Deviantart.com, DeviantArt, 1 Mar. 2019, www.deviantart.com/chunphan/art/Scorbunnny-evolution-line-787711633. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="nine()">Click to show citation</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2f481410-202b-4fc0-b639-0e5cf6202737/dd0uue1-5ebb334e-87f1-460d-a21d-56eb8e2d5753.png/v1/fill/w_1024,h_611,q_80,strp/sobble_fake_evolutions_by_mat4265_dd0uue1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjExIiwicGF0aCI6IlwvZlwvMmY0ODE0MTAtMjAyYi00ZmMwLWI2MzktMGU1Y2Y2MjAyNzM3XC9kZDB1dWUxLTVlYmIzMzRlLTg3ZjEtNDYwZC1hMjFkLTU2ZWI4ZTJkNTc1My5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.EUtmiXNqPNJFaWmhrW1z5Qp5nxoSS_jU7fSsVG-JUs4" alt="Sobble's evolution line fan art">
+              <figcaption id='ten'>Mat4265. "Sobble Fake Evolutions." 2019. Deviantart.com, DeviantArt, 27 Feb. 2019, www.deviantart.com/mat4265/art/Sobble-Fake-Evolutions-787499353. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="ten()">Click to show citation</button>
+          </td>
+          <td rowspan="2">
+            <figure>
+              <img src="https://swordshield.pokemon.com/assets/img/common/pokemon-3_2x.png" alt="Sobble, Gen 8 Water Starter.">
+              <figcaption id='eleven'> Water Type Starter Sobble. 2019. Pokemon.com, Pokémon, 27 Feb. 2019, swordshield.pokemon.com/assets/img/common/pokemon-3_2x.png. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="eleven()">Click to show citation</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/746ae439-66f6-4843-8468-3a4655189ad1/dd0zedx-5b4ad605-18a1-4493-952d-02813b82313e.png/v1/fill/w_900,h_738,q_80,strp/sobble_evolution_line_by_chunphan_dd0zedx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM4IiwicGF0aCI6IlwvZlwvNzQ2YWU0MzktNjZmNi00ODQzLTg0NjgtM2E0NjU1MTg5YWQxXC9kZDB6ZWR4LTViNGFkNjA1LTE4YTEtNDQ5My05NTJkLTAyODEzYjgyMzEzZS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0._RyQXvm4v6GiaEYB43jHGdTMVXDKViHH-g0YxQROicE" alt="Sobble's evolution line fan art">
+              <figcaption id='twelve'>ChunPhan. "Sobble Evolution Line." 2019. Deviantart.com, DeviantArt, 1 Mar. 2019, www.deviantart.com/chunphan/art/Sobble-evolution-line-787711893. Accessed 3 Apr. 2019.</figcaption>
+            </figure>
+            <button onclick="twelve()">Click to show citation</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Footer -->
+    <footer>
+      <p> Made for a CSC450 project </p>
+      <p> &copy; Trinity Sazo </p>
+    </footer>
+
+  </body>
+</html>
